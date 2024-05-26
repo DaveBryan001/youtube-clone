@@ -42,19 +42,33 @@ You can view a live demo of the project [here](#).
 
 ## Project Structure
 youtube-clone/
+
 │
+
 ├── assets/
+
 │ ├── channel-pictures/
+
 │ └── icons/
+
 | └── thumbnails
+
 |
+
 │
+
 ├── styles/
+
 │ ├── main.css
+
 │
+
 ├── index.html
+
 ├── README.md
+
 └── ...
+
 
 
 ## Contributing
