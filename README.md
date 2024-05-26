@@ -78,6 +78,6 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-Your Name - [dave.tamakloe@gmail.com](mailto:dave.tamakloe@gmail.com)
+Dave Bryan Tamakloe - [dave.tamakloe@gmail.com](mailto:dave.tamakloe@gmail.com)
 
 Project Link: [https://github.com/DaveBryan001/youtube-clone](https://github.com/DaveBryan001/youtube-clone)
