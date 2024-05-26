@@ -41,34 +41,22 @@ You can view a live demo of the project [here](#).
 1. Open the `index.html` file in your web browser to view the landing page.
 
 ## Project Structure
+```bash
 youtube-clone/
-
 │
-
 ├── assets/
-
 │ ├── channel-pictures/
-
 │ └── icons/
-
 | └── thumbnails
-
 |
-
 │
-
 ├── styles/
-
 │ ├── main.css
-
 │
-
 ├── index.html
-
 ├── README.md
-
-└── ...
-
+└── LICENSE
+```
 
 
 ## Contributing
