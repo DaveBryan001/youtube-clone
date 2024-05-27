@@ -14,7 +14,7 @@ This project is a clone of the YouTube landing page created using only HTML and 
 - [Contact](#contact)
 
 ## Demo
-You can view a live demo of the project [here](#).
+You can view a live demo of the project [here](https://youtubebydave.netlify.app/).
 
 ## Features
 - Responsive design
