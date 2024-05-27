@@ -14,40 +14,51 @@
 
 <body>
     <!-- ---------header---------- -->
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamburger-menu" src="icons/hamburger-menu.svg">
-            <img class="youtube-logo" src="icons/youtube-logo.svg">
+            <a href="https://www.youtube.com/">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </a>
         </div>
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
                 <img class="search-icon" src="icons/search.svg">
+                <div class="tool-tip">Search</div>
             </button>
             <button class="voice-search-button">
                 <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                <div class="tool-tip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
-            <img class="upload-icon" src="icons/upload.svg">
-            <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+            <div class="upload-container">
+                <img class="upload-icon" src="icons/upload.svg">
+                <div class="tool-tip">Create</div>
+            </div>
+            <div class="youtube-apps-container">
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                <div class="tool-tip">YouTube Apps</div>
+            </div>
             <div class="notifications-container">
                 <img class="notifications-icon" src="icons/notifications.svg">
                 <div class="notifications-count">9+</div>
+                <div class="tool-tip">Notifications</div>
             </div>
             <img class="user-picture" src="channel-pictures/dave-anime.png">
         </div>
 
-    </div>
+    </header>
     <!-- -------------side bar-------------- -->
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-icons">
             <img src="icons/home.svg">
             <div>Home</div>
         </div>
         <div class="sidebar-icons">
             <img src="icons/youtube-shorts-logo.svg">
-<div>Shorts</div>
+            <div>Shorts</div>
         </div>
         <div class="sidebar-icons">
             <img src="icons/subscriptions.svg">
@@ -65,180 +76,235 @@
             <img src="icons/download-svgrepo-com.svg">
             <div>Downloads</div>
         </div>
-    </div>
+    </nav>
+    <main>
+        <section class="video-grid">
+            <!-- --------------------first row------------------ -->
+            <a href="https://youtu.be/n2RNcPRtAiY?si=JGhABMoEkYiy_lWa" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
+                        <div class="video-time">14:21</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/channel-1.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
 
-    <div class="video-grid">
-        <!-- --------------------first row------------------ -->
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
-                <div class="video-time">14:21</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/channel-1.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                            <p class="video-author">Marques Brownlee</p>
 
-                    <p class="video-author">Marques Brownlee</p>
+                            <p class="video-stats">4.2M views &#183; 3 years ago</p>
+                        </div>
 
-                    <p class="video-stats">4.2M views &#183; 3 years ago</p>
+                    </div>
                 </div>
-
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/carwow.jpg" alt="">
-                <div class="video-time">12:53</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/carwowpfp.jpeg" alt="">
+            </a>
+            <a href="https://www.youtube.com/watch?v=Jypwbla8HJI" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/carwow.jpg" alt="">
+                        <div class="video-time">12:53</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/carwowpfp.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Porsche 911 GT3 RS v BMW M3 CS: DRAG RACE</p>
+                            <p class="video-author">carwow</p>
+                            <p class="video-stats">2.4M views &#183; 8 months ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Porsche 911 GT3 RS v BMW M3 CS: DRAG RACE</p>
-                    <p class="video-author">carwow</p>
-                    <p class="video-stats">2.4M views &#183; 8 months ago</p>
+            </a>
+            <a href="https://youtu.be/eBYXHsbeYKU?si=RYGvQtbOuUDhvLNr" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/cod.jpg" alt="">
+                        <div class="video-time">1:21</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/cod.png" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Call of Duty: Warzone Mobile | Launch Trailer</p>
+                            <p class="video-author">Call of Duty</p>
+                            <p class="video-stats">11M views &#183; 2 months ago</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/cod.jpg" alt="">
-                <div class="video-time">1:21</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/cod.png" alt="">
+            </a>
+            <!-- -------------------------second row-------------------- -->
+            <a href="https://www.youtube.com/watch?v=H71IxqmCfxQ" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/laptop.jpg">
+                        <div class="video-time">16:12</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/mysterious-tech.png" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Watch this BEFORE You Buy a Laptop!</p>
+                            <p class="video-author">The Mysterious Tech</p>
+                            <p class="video-stats">3M views &#183; 8 months ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Call of Duty: Warzone Mobile | Launch Trailer</p>
-                    <p class="video-author">Call of Duty</p>
-                    <p class="video-stats">11M views &#183; 2 months ago</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=XEzRZ35urlk&t=6s" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/googleio.jpg" alt="">
+                        <div class="video-time">1:52:43</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/google.png" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Google Keynote (Google I/O ‘ 24)</p>
+                            <p class="video-author">Google</p>
+                            <p class="video-stats">1.6M views &#183; streamed 12 days ago</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- -------------------------second row-------------------- -->
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/laptop.jpg" alt="">
-                <div class="video-time">16:12</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/mysterious-tech.png" alt="">
+            </a>
+            <a href="https://youtu.be/3hPoEmlBQdY?si=PWbDEIKWvzVXEBKK" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/s24.jpg" alt="">
+                        <div class="video-time">3:31</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/samsung.png" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Galaxy S24 Ultra: Official Introduction Film | Samsung</p>
+                            <p class="video-author">Samsung</p>
+                            <p class="video-stats">35M views &#183; 4 months ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Watch this BEFORE You Buy a Laptop!</p>
-                    <p class="video-author">The Mysterious Tech</p>
-                    <p class="video-stats">3M views &#183; 8 months ago</p>
+            </a>
+            <!-- ------------------third row-------------------- -->
+            <a href="https://youtu.be/uCXkB9FUWSk?si=g-H_CR6dp03uMI-f" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/j-monty.jpg" alt="">
+                        <div class="video-time">2:49</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/j-monty.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Abba</p>
+                            <p class="video-author">J. Monty</p>
+                            <p class="video-stats">69k views &#183; 2 months ago</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/googleio.jpg" alt="">
-                <div class="video-time">1:52:43</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/google.png" alt="">
+            </a>
+            <a href="https://youtu.be/zXJbdtxh0XE?si=v9w1WQ6UR1ATgMS8" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/ipad.jpg" alt="">
+                        <div class="video-time">4:01</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/apple.png" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">The new iPad Pro + M4 chip</p>
+                            <p class="video-author">Apple</p>
+                            <p class="video-stats">525k views &#183; 2 weeks ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Google Keynote (Google I/O ‘ 24)</p>
-                    <p class="video-author">Google</p>
-                    <p class="video-stats">1.6M views &#183; streamed 12 days ago</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=iZt7Fwu91FI" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/m5-comp.jpg" alt="">
+                        <div class="video-time">8:22</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/RoCars.png">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">BMW M5 Competition (1200 Hp) - Wild Sedan in details</p>
+                            <p class="video-author">RoCars</p>
+                            <p class="video-stats">4M views &#183; 1 year ago</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/s24.jpg" alt="">
-                <div class="video-time">3:31</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/samsung.png" alt="">
+            </a>
+            <!-- -----------fourth row----------------- -->
+            <a href="https://youtu.be/KgSIbnegeSQ?si=gTyvjN_TuQkUVzmJ" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/defe.jpg" alt="">
+                        <div class="video-time">6:47</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/team-eternity.png" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Team Eternity Ghana - Defe Defe led by Naana Asiedu</p>
+                            <p class="video-author">Team Eternity Ghana</p>
+                            <p class="video-stats">917k views &#183; 3 weeks ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Galaxy S24 Ultra: Official Introduction Film | Samsung</p>
-                    <p class="video-author">Samsung</p>
-                    <p class="video-stats">35M views &#183; 4 months ago</p>
+            </a>
+            <a href="" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/dodge.jpg">
+                        <div class="video-time">18:56</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/topgear.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">RIP Dodge Challenger V8: Goodbye To America’s Maddest Muscle Car</p>
+                            <p class="video-author">Top Gear</p>
+                            <p class="video-stats">423k views &#183; 2 months ago</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- ------------------third row-------------------- -->
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/j-monty.jpg" alt="">
-                <div class="video-time">2:49</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/j-monty.jpeg" alt="">
+            </a>
+            <a href="https://www.youtube.com/watch?v=fl-wz50yAHo" class="video-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/cybertruck-urus.jpg" alt="">
+                        <div class="video-time">10:17</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-photo" src="channel-pictures/carwowpfp.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Tesla Cybertruck v Lamborghini Urus: DRAG RACE</p>
+                            <p class="video-author">carwow</p>
+                            <p class="video-stats">9.1M views &#183; 5 months ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Abba</p>
-                    <p class="video-author">J. Monty</p>
-                    <p class="video-stats">69k views &#183; 2 months ago</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/ipad.jpg" alt="">
-                <div class="video-time">4:01</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/apple.png" alt="">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">The new iPad Pro + M4 chip</p>
-                    <p class="video-author">Apple</p>
-                    <p class="video-stats">525k views &#183; 2 weeks ago</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/m5-comp.jpg" alt="">
-                <div class="video-time">8:22</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/RoCars.png" alt="">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">BMW M5 Competition (1200 Hp) - Wild Sedan in details</p>
-                    <p class="video-author">RoCars</p>
-                    <p class="video-stats">4M views &#183; 1 year ago</p>
-                </div>
-            </div>
-        </div>
-        <!-- -----------fourth row----------------- -->
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/defe.jpg" alt="">
-                <div class="video-time">6:47</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-photo" src="channel-pictures/team-eternity.png" alt="">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Team Eternity Ghana - Defe Defe led by Naana Asiedu</p>
-                    <p class="video-author">Team Eternity Ghana</p>
-                    <p class="video-stats">917k views &#183; 3 weeks ago</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+            </a>
+    
+        </section>
+    </main>
 </body>
 
 </html>

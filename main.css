@@ -5,10 +5,8 @@
 }
 
 body {
-    padding-top: 100px;
-    padding-left: 90px;
-    padding-right: 24px;
     background-color: rgb(248, 248, 248);
+    padding: 100px 24px 50px 90px;
 }
 
 /* ---------header----------- */
@@ -23,6 +21,8 @@ body {
     background-color: white;
     border: 1px solid rgb(196, 196, 196);
     z-index: 100;
+    padding: 0 10px;
+
 }
 
 .left-section {
@@ -79,6 +79,43 @@ body {
 
 }
 
+.search-button,
+.voice-search-button,
+.upload-container,
+.youtube-apps-container,
+.notifications-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tool-tip,
+.voice-search-button .tool-tip,
+.upload-container .tool-tip,
+.youtube-apps-container .tool-tip,
+.notifications-container .tool-tip {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.664);
+    color: white;
+    padding: 8px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    bottom: -40px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    /* z-index: 300; */
+}
+
+.search-button:hover .tool-tip,
+.voice-search-button:hover .tool-tip,
+.upload-container:hover .tool-tip,
+.youtube-apps-container:hover .tool-tip,
+.notifications-container:hover .tool-tip {
+    opacity: 1;
+}
+
 .search-icon {
     height: 25px;
 }
@@ -92,6 +129,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(223, 223, 223);
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+.voice-search-button:hover .tool-tip {
+    opacity: 1;
 }
 
 .voice-search-icon {
@@ -122,11 +165,11 @@ body {
 
 .notifications-count {
     position: absolute;
-    top:-3px;
+    top: -3px;
     right: -7px;
     background-color: red;
     color: white;
-    font-family: Roboto,Arial;
+    font-family: Roboto, Arial;
     font-size: 10px;
     font-weight: 700;
     padding: 2px 4px;
@@ -164,6 +207,7 @@ body {
     flex-direction: column;
     cursor: pointer;
 }
+
 .sidebar-icons:hover {
     background-color: rgb(235, 235, 235);
 }
@@ -176,7 +220,8 @@ body {
 .sidebar-icons div {
     font-size: 10px;
 }
-/* ----------video--------------- */
+
+/* ----------video main--------------- */
 .video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -184,6 +229,19 @@ body {
     row-gap: 40px;
 }
 
+.video-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    /* Make the link block level to wrap the entire preview */
+}
+.video-preview {
+    transition: transform 0.2s ease; /* Optional: Add some hover effect */
+}
+
+.video-link:hover .video-preview {
+    transform: scale(1.02); /* Optional: Slightly scale up on hover */
+}
 
 .thumbnail-row {
     margin: 0px 0px 12px;
@@ -236,4 +294,39 @@ body {
     font-weight: 500;
     border-radius: 5px;
 
+}
+
+@media (max-width: 450px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .left-section,
+    .middle-section,
+    .right-section {
+        flex-grow: 1;
+        /* Allow the sections to grow, distributing available space */
+        flex-shrink: 1;
+        /* Allow the sections to shrink, preventing overlap */
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1119px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
